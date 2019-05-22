@@ -1,13 +1,13 @@
 var start = document.getElementById("start");
 var quiz = document.getElementById("quiz");
-var question = $("#question");
-var qImg = $("#qImg");
-var choiceA = $("#A");
-var choiceB = $("#B");
-var choiceC = $("#C");
-var counter = $("#counter");
+var question = document.getElementById("question");
+var qImg = document.getElementById("qImg");
+var choiceA = document.getElementById("A");
+var choiceB = document.getElementById("B");
+var choiceC = document.getElementById("C");
+var counter = document.getElementById("counter");
 var timeGauge = document.getElementById("timeGauge");
-var progress = $("#progress");
+var progress = document.getElementById("progress");
 var scoreDiv = document.getElementById("scoreContainer");
 
 var questions = [
@@ -112,11 +112,11 @@ var questions = [
             // answer is correct
             score++;
             // change progress color to green
-            answerIsCorrect();
+           
         }else{
             // answer is wrong
             // change progress color to red
-            answerIsWrong();
+           
         }
         count = 0;
         if(runningQuestion < lastQuestion){
@@ -134,7 +134,7 @@ var questions = [
     
     // score render
     function scoreRender(){
-      
+        scoreDiv.style.display = "block";
         
         // calculate the amount of question percent answered by the user
         const scorePerCent = Math.round(100 * score/questions.length);

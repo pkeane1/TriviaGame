@@ -1,0 +1,8 @@
+
+body { 
+    background: url(https://cdn2.itpro.co.uk/sites/itpro/files/2018/04/game_of_thrones_kasperskyshutterstock.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+  }
