@@ -4,7 +4,7 @@ var question = document.getElementById("question");
 var qImg = document.getElementById("qImg");
 var choiceA = document.getElementById("A");
 var choiceB = document.getElementById("B");
-var choiceC = document.getElementById("C");
+var choiceC = document.getElementById("C");  // $("#c")
 var counter = document.getElementById("counter");
 var timeGauge = document.getElementById("timeGauge");
 var progress = document.getElementById("progress");
@@ -21,7 +21,7 @@ var questions = [
     },{
         question : "Who is crippled in the first season?",
         imgSrc : "img/css.png",
-        choiceA : "Stevie Wonder",
+        choiceA : "Bran the Builder",
         choiceB : "Bran the Broken",
         choiceC : "Jamie Lanaster",
         correct : "B"
@@ -60,7 +60,7 @@ var questions = [
     var score = 0;
 
     function renderQuestion(){
-        let q = questions[runningQuestion];
+        var q = questions[runningQuestion];
         
         question.innerHTML = "<p>"+ q.question +"</p>";
         qImg.innerHTML = "<img src="+ q.imgSrc +">";
