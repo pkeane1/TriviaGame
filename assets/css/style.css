@@ -29,7 +29,9 @@ body {
       background-color: black;
       margin-top:50px;
       opacity: .7;
-      box-shadow: 0px 5px 15px 0px;
+      border-style: solid;
+      border-width: 2px 2px 2px 2px;
+      border-color: white;
       
   }
 
@@ -82,3 +84,14 @@ body {
     margin-left : 25px;
 }
 
+.end{
+    background-color: black;
+    margin-top: 50px;
+    margin-left: 200px;
+    margin-right: 200px;
+      opacity: .7;
+      border-style: solid;
+      border-width: 2px 2px 2px 2px;
+      border-color: white;
+   
+}

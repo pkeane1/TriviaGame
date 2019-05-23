@@ -13,35 +13,35 @@ var playAgain = document.getElementById("playAgain")
 var questions = [
     {
         question :"Who is the tall blonde women?",
-        imgSrc : "img/html.png",
+        imgSrc : "assets/images/tarth.jpg",
         choiceA : "Brianne of Tarth",
         choiceB : "James Regan",
         choiceC : "Michael Jackson",
         correct : "A"
     },{
         question : "Who is crippled in the first season?",
-        imgSrc : "img/css.png",
+        imgSrc  : "assets/images/bran.jpg",
         choiceA : "Bran the Builder",
         choiceB : "Bran the Broken",
         choiceC : "Jamie Lanaster",
         correct : "B"
     },{
         question : "What is Jon Snow Swords Name?",
-        imgSrc : "img/css.png",
+        imgSrc : "assets/images/Longclaw.jpg",
         choiceA : "Light Bringer",
-        choiceB : "jon snow sword",
+        choiceB : "Long Claw",
         choiceC : "Jamie Lanaster",
         correct : "B"
     },{
         question : "What is Jon Snows dog name?",
-        imgSrc : "img/css.png",
+        imgSrc : "assets/images/ghoast.jpg",
         choiceA : "Prince",
         choiceB : "Ghoast",
         choiceC : "Henrick",
         correct : "B"
     },{
         question : "Who is the wildling with the red beard?",
-        imgSrc : "img/css.png",
+        imgSrc : "assets/images/tormond.jpg",
         choiceA : "Dylan Osho",
         choiceB : "Rob Stark",
         choiceC : "Tormund Giantsbane",
@@ -54,7 +54,7 @@ var questions = [
     var runningQuestion = 0;
     var count = 0;
     var questionTime = 10; // 10s
-    var gaugeWidth = 615; // 150px
+    var gaugeWidth = 610; // 150px
     var gaugeUnit = gaugeWidth / questionTime;
     var TIMER;
     var score = 0;
@@ -136,7 +136,7 @@ var questions = [
         
         // calculate the amount of question percent answered by the user
         var scorePerCent = Math.round(100 * score/questions.length);
-        scoreDiv.innerHTML += ("<p>You Scored a : " + scorePerCent +"%</p>")
+        scoreDiv.innerHTML += ("<p class='end'>You Scored a : " + scorePerCent +"%</p>")
         if(scorePerCent <= 100) {
             return quiz.style.display ="none";
             
@@ -146,11 +146,14 @@ var questions = [
           return scoreDiv.style.display = "block";
                     
         }
-        if(scoreDiv.style.display = "block") {
-         return playAgain.style.display = "block";
-    
+        
+
     }
-}
+
+    function restart(){
+        if(scoreDiv.style.display = "block";)
+        return playAgain
+    }
     
     
     
