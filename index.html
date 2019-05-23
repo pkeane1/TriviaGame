@@ -26,11 +26,11 @@
             <div class="row justify-content-md-center">
                     <div class="col col-lg-3">
                     </div>
-            <div id="quiz" class="col col-lg-6 rounded" style="display: none">
-                    <div id="question"></div>
+            <div id="quiz" class="col col-lg-6 " style="display: none">
+                    <div class="py-3" id="question"></div>
                     <div id="qImg"></div>
                     <div id="choices">
-                        <div class="choice" id="A" onclick="checkAnswer('A')"></div>
+                        <div class="choice pt-2" id="A" onclick="checkAnswer('A')"></div>
                         <div class="choice" id="B" onclick="checkAnswer('B')"></div>
                         <div class="choice" id="C" onclick="checkAnswer('C')"></div>
                     </div>
@@ -43,6 +43,10 @@
                         <div id="btimeGauge"></div>
                         <div id="timeGauge"></div>
                     </div>
+                   
+        </div>
+        <div id="scoreContainer"><button id="playAgain" style="display: none">Play again?</button> </div>
+        </div>
         </div>
     <!-- jQuery CDN-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

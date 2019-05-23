@@ -29,14 +29,15 @@ body {
       background-color: black;
       margin-top:50px;
       opacity: .7;
-      
+      box-shadow: 0px 5px 15px 0px;
       
   }
 
   #question{
       color: whitesmoke;
       font-family: 'MedievalSharp', cursive;
-      font-size: 22px;
+      font-size: 28px;
+      padding: 20px 20px 20px 20px;
 
   }
 
@@ -49,11 +50,35 @@ body {
 
 #A:hover{
     background:red;
+    padding-top: 10px;
 }
 
 #B:hover{
     background:red;
+    padding-top: 10px;
 }
 #C:hover{
     background:red;
+    padding-top: 10px;
 }
+
+
+#scoreContainer{
+    color: white;
+    font-size: 30px;
+}
+
+#timer{
+    font-size: 30px;
+    color: red;
+    
+
+}
+#timeGauge{
+    height : 10px;
+    border-radius: 10px;
+    background-color: red;
+    margin-top : -10px;
+    margin-left : 25px;
+}
+
