@@ -70,7 +70,7 @@ var questions = [
     }
     
     start.addEventListener("click",startQuiz);
-    
+    playAgain.addEventListener("click",startQuiz);
     // start quiz
     function startQuiz(){
         start.style.display = "none";
@@ -101,6 +101,7 @@ var questions = [
                 // end the quiz and show the score
                 clearInterval(TIMER);
                 scoreRender();
+
             }
         }
     }
@@ -124,6 +125,7 @@ var questions = [
             // end the quiz and show the score
             clearInterval(TIMER);
             scoreRender();
+            restart();
         }
     }
     
@@ -144,6 +146,7 @@ var questions = [
         if(quiz.style.display ="none") {
          
           return scoreDiv.style.display = "block";
+          
                     
         }
         
@@ -151,11 +154,14 @@ var questions = [
     }
 
     function restart(){
-        if(scoreDiv.style.display = "block";)
-        return playAgain
+        if(scoreDiv.style.display = "block") {
+        return playAgain.style.display = "block"
     }
-    
-    
+        if(playAgain.clicked === true){
+        playAgain.style.display = "none"
+        scoreDiv.style.display = "none"
+        }
+}
     
     
     
